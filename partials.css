@@ -4,7 +4,9 @@
     box-sizing: border-box;
   }
 
-
+  html, body {
+    height: 100%;
+}
   
   .header {
     background-color: rgba(57, 35, 16, 0.9);
@@ -98,11 +100,11 @@
 
   /* Footer */
 
-  .footer {
+ /* General Footer Styles */
+.footer {
     background-color: black;
     color: #EF6C00;
 }
-
 
 .footer a {
     color: #EF6C00;
@@ -121,7 +123,6 @@
 .footer .social-icons a:hover {
     text-decoration: none;
 }
-
 
 /* Custom styling for the buttons */
 .footer .btn-custom {
@@ -142,11 +143,6 @@
 }
 
 /* Flexbox to align buttons on the same line */
-.footer .button-group {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .footer .col-md-4.mb-4 {
     position: relative;
 }
@@ -156,3 +152,53 @@
     bottom: 0;
 }
 
+/* CREDITS section styles */
+.footer-credits {
+    border-top: 3px solid #EF6C00;
+    padding-top: 20px;
+}
+
+.footer-text, .vat-number {
+    color: #EF6C00;
+    margin: 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-credits .footer-text,
+.footer-credits .vat-number {
+    margin-bottom: 0;
+}
+
+.footer-credits .footer-text, 
+.footer-credits .vat-number, 
+.footer-credits .footer-links {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Learn More Section Styling */
+.learn-more-links {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+
+.learn-more-links li {
+    margin-bottom: 10px;
+}
+
+/* Main container takes the full height */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Make sure the content section expands */
+.footer-content {
+    flex: 1;
+}
