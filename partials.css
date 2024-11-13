@@ -4,6 +4,18 @@
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('/fonts/hvdtrial_brandon_grotesque_regular-bf64a625c9311e1-webfont.woff2') format('woff2'),
+         url('/fonts/hvdtrial_brandon_grotesque_regular-bf64a625c9311e1-webfont.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
   html, body {
     height: 100%;
 }
