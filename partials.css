@@ -222,6 +222,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+
 }
 
 .offcanvas .nav-menu {
@@ -242,6 +243,7 @@ html, body {
   text-transform: uppercase;
   position: relative;
   transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
 .nav-menu a:hover {
