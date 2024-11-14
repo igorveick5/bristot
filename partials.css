@@ -18,9 +18,9 @@ body {
   font-family: "Brandon Grotesque", sans-serif;
 }
 
-html,
-body {
+html, body {
   height: 100%;
+  margin: 0;
 }
 
 .header {
@@ -186,7 +186,7 @@ body {
   margin: 0;
 }
 
-/* Learn More Section Styling */
+/* Learn More Section */
 .learn-more-links {
   display: flex;
   justify-content: space-between;
@@ -201,5 +201,97 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
+  /* footer stays on bottom */
+  flex-grow: 1; 
+}
+
+
+/* Offcanvas */
+.offcanvas {
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  right: 0;
+  left: auto;
+}
+
+.offcanvas-body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
+}
+
+.offcanvas .nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.nav-menu a {
+  text-decoration: none;
+  color: #ef6c00;
+  font-size: 24px; 
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ef6c00;
+}
+
+/* Underline effect on hover */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ef6c00; 
+  transform: scaleX(0);
+}
+
+.nav-menu a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.offcanvas-header {
+  padding: 50px;
+  background-color: #f1f1f1;
+}
+
+.offcanvas-header .btn-close img {
+  width: 25px;  
+  height: auto;
+}
+
+/* Style for the close button */
+.offcanvas-header .btn-close {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.offcanvas-header .btn-close:focus {
+  box-shadow: 0 0 0;
+  }
+
+.offcanvas-header .btn-close{
+opacity: 1;
 }
