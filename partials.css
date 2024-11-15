@@ -60,27 +60,13 @@ main img {
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
-  position: fixed; /* Fixed at the top */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Makes sure the header is above the image */
+  z-index: 1000;
   backdrop-filter: blur(5px);
   padding: 0 1rem;
-  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
-}
-
-/* Class for hiding the header */
-.header.hidden {
-  transform: translateY(-100%); /* Move header out of view */
-}
-
-/* Optional: Keep the header's appearance smooth */
-.header-border-bottom {
-  position: absolute;
-  border-bottom: 3px solid #ef6c00;
-  bottom: 0;
-  width: 100%;
 }
 
 .header-border-bottom {
