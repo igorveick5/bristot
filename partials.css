@@ -317,7 +317,7 @@ margin-bottom: 0;
 .offcanvas .nav-menu {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 60px 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -415,6 +415,18 @@ margin-bottom: 0;
 .offcanvas-header .btn-close {
   opacity: 1;
 }
+
+.language-option {
+  color: #ef6c00;
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+}
+
 
 /* Social media icons */
 .offcanvas-social-icons {
