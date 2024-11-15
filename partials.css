@@ -127,7 +127,7 @@ main img {
   color: #ef6c00;
 }
 
-.footer .col-md-4 p {
+.footer-container p {
   max-width: 250px;
   line-height: 1.5;
 }
