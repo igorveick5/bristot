@@ -141,6 +141,10 @@ main img {
   text-decoration: underline;
 }
 
+.footer h5 {
+  font-weight: bold;
+}
+
 /* Social icon styling */
 .footer .social-icons a {
   font-size: 32px;
@@ -185,8 +189,10 @@ main img {
 /* 'Learn More' section styling */
 .learn-more-links {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .learn-more-links li {
@@ -195,6 +201,10 @@ main img {
 
 .learn-more-links li:last-child {
   margin-bottom: 0;
+}
+
+.learn-more-links .list-unstyled:last-child {
+margin-bottom: 0;
 }
 
 .footer-credits {
