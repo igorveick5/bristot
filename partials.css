@@ -36,6 +36,8 @@ main img {
   object-fit: cover; 
 }
 
+
+
 .header {
   background-color: rgba(57, 35, 16, 0.9);
   display: flex;
@@ -332,28 +334,34 @@ margin-bottom: 0;
   position: relative;
   transition: color 0.3s ease;
   margin-left: 20px;
+  display: inline-block;
 }
 
-
-.nav-menu a:hover {
+.nav-menu a::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, right 0.3s ease;
+  font-size: 28px;
   color: #ef6c00;
 }
 
-/* Underline effect on hover */
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ef6c00;
-  transform: scaleX(0);
+/* Hover effect: Show arrow */
+.nav-menu a:hover::after {
+  opacity: 1; 
+  right: -60px;
 }
 
-.nav-menu a:hover::after {
-  transform: scaleX(1);
+.nav-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ef6c00;
 }
+
 
 /* Header offcanvas */
 .offcanvas-header {
@@ -407,6 +415,7 @@ margin-bottom: 0;
 .offcanvas-header .btn-close {
   opacity: 1;
 }
+
 /* Social media icons */
 .offcanvas-social-icons {
   display: flex;
