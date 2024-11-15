@@ -20,7 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-
 html, body {
   height: 100%;
   margin: 0;
@@ -121,13 +120,13 @@ main img {
   transform: scaleX(1);
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   background-color: black;
   color: #ef6c00;
 }
 
-.footer-container p {
+.footer .col-md-4 p {
   max-width: 250px;
   line-height: 1.5;
 }
@@ -142,6 +141,7 @@ main img {
   text-decoration: underline;
 }
 
+/* Social icon styling */
 .footer .social-icons a {
   font-size: 32px;
 }
@@ -150,7 +150,14 @@ main img {
   text-decoration: none;
 }
 
-/* Custom styling for the buttons */
+/* Styling the 'button-group' to display buttons inline */
+.footer .button-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px; 
+}
+
+/* Custom button styling */
 .footer .btn-custom {
   display: inline-flex;
   align-items: center;
@@ -165,37 +172,17 @@ main img {
   font-weight: 600;
   height: 48px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
+/* Button hover effect */
 .footer .btn-custom:hover {
   background-color: #ef6c00;
   color: black;
   text-decoration: none;
 }
 
-/* Flexbox to align buttons on the same line */
-.footer .col-md-4.mb-4 {
-  position: relative;
-}
-
-.footer .col-md-4.mb-4 .button-group {
-  position: absolute;
-  bottom: 0;
-}
-
-/* CREDITS section styles */
-.footer-credits {
-  border-top: 3px solid #ef6c00;
-  padding-top: 20px;
-}
-
-.footer-text,
-.vat-number {
-  color: #ef6c00;
-  margin: 0;
-}
-
-/* Learn More Section */
+/* 'Learn More' section styling */
 .learn-more-links {
   display: flex;
   justify-content: space-between;
@@ -206,12 +193,62 @@ main img {
   margin-bottom: 10px;
 }
 
-/* Main container takes the full height */
+.learn-more-links li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-credits {
+  border-top: 3px solid #ef6c00;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-text,
+.vat-number {
+  color: #ef6c00;
+  margin: 0;
+}
+
+/* Footer container styling */
 .footer-container {
   display: flex;
   flex-direction: column;
-  /* footer stays on bottom */
-  flex-grow: 1; 
+  flex-grow: 1;
+}
+
+/* Flexbox styling for responsive footer layout */
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer .col-md-4 {
+  flex: 1;
+  min-width: 280px;
+  max-width: 33.33%; 
+}
+
+.footer .col-md-4.mb-4 {
+  position: relative;
+}
+
+.footer .col-md-4.mb-4:nth-child(2) .button-group {
+  margin-top: 42px;
+}
+
+.footer-credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-links a {
+  margin-left: 20px;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
 }
 
 
