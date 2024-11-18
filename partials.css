@@ -45,10 +45,7 @@ main .main-bg {
 /* Swiper */
 .swiper {
   position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   height: 400px;
 }
 
@@ -99,7 +96,49 @@ main .main-bg {
   right: -2.2rem;
 }
 
+/* Style for the main heading */
+.swiper-h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 5px solid transparent;
+  transition: text-decoration 0.6s ease;
+  text-decoration: underline transparent;
+}
 
+
+.swiper-h2:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.swiper-h2::after {
+  content: '\f061';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-h2:hover::after {
+  opacity: 1;
+}
+
+
+
+.swiper-p {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
 
 
 /* IMAGE CONTAINER */
@@ -111,7 +150,7 @@ main .main-bg {
   background-position: center;
 }
 
-.background-image {
+.main-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
