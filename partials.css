@@ -55,15 +55,16 @@ main .main-bg {
 
 .swiper-slide {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   justify-content: center;
   align-items: center;
+  text-align: center; /* Center text below the image */
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* max-width: 350px; */
   max-height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,30 +72,71 @@ main .main-bg {
   opacity: 1;
 }
 
-
 /* Hover effect on images */
 .swiper-slide img:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-.swiper-navigation {
-  z-index: 1;
+/* Swiper h4 nad h3 */
+.swiper-slide h4 {
+  margin-top: 15px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
+.swiper-slide h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+}
 
-.swiper-navigation .swiper-previous, .swiper-navigation .swiper-next {
+/* SWIPER NAVIGATION */
+.swiper-navigation {
+  z-index: 2;
+  position: relative;
+  
+}
+
+.swiper-navigation .swiper-previous,
+.swiper-navigation .swiper-next {
   position: absolute;
 }
 
 .swiper-navigation .swiper-previous {
-  left: -2.6rem;
+  left: -3rem;
 }
 
 .swiper-navigation .swiper-next {
-  right: -2.6rem;
+  right: -3rem;
 }
+
+.swiper-navigation .swiper-previous #Ellisse_2,
+.swiper-navigation .swiper-next #Ellisse_2 {
+  transition: all 0.2s ease;
+}
+
+
+/* Hover effect SVG */
+.swiper-navigation .swiper-previous:hover #Tracciato_39,
+.swiper-navigation .swiper-next:hover #Tracciato_39 {
+  stroke: black;
+}
+
+.swiper-navigation .swiper-previous:hover #Tracciato_40,
+.swiper-navigation .swiper-next:hover #Tracciato_40 {
+  stroke: black;
+}
+
+.swiper-navigation .swiper-previous:hover #Ellisse_2,
+.swiper-navigation .swiper-next:hover #Ellisse_2 {
+  fill: #ef6c00;
+  stroke: #ef6c00;
+}
+
+
 
 /* Style for the main heading */
 .swiper-h2 {
@@ -108,7 +150,6 @@ main .main-bg {
   transition: text-decoration 0.6s ease;
   text-decoration: underline transparent;
 }
-
 
 .swiper-h2:hover {
   text-decoration: underline;
@@ -132,13 +173,13 @@ main .main-bg {
   opacity: 1;
 }
 
-
-
 .swiper-p {
   font-size: 24px;
   font-weight: 500;
   color: black;
+  padding-bottom: 20px;
 }
+
 
 
 /* IMAGE CONTAINER */
