@@ -111,6 +111,17 @@ main .main-bg {
   position: relative;
 }
 
+.nav--item {
+  visibility: visible;
+  opacity: 1;
+  transition: .3s all ease-in-out;
+}
+
+.nav--item.swiper-button-disabled {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .swiper-navigation .swiper-previous,
 .swiper-navigation .swiper-next {
   position: absolute;
@@ -223,8 +234,9 @@ main .main-bg {
   letter-spacing: 1px;
   font-weight: bold;
   color: black;
-  margin-top: 30px; /* Add space above the secondary heading */
+  margin-top: 30px; 
 }
+
 .paragraph-intro {
   font-size: 28px;
   font-weight: 400;
