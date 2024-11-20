@@ -359,7 +359,7 @@ main .main-bg {
   text-decoration: none;
   background-color: black;
   color: #ef6c00;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
   text-transform: uppercase;
@@ -812,11 +812,13 @@ margin-bottom: 0;
 /* JOIN COMMUNITY */
 #join-community {
   padding: 60px 60px;
+  max-width: 1100px;
+  margin: 0 auto; 
 }
 
 .newsletter-form .form-control {
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -828,41 +830,18 @@ margin-bottom: 0;
   width: 100%;
   word-wrap: break-word; 
   line-height: 1.4;
+  margin-left: 13px;
 }
-
 
 .newsletter-form .form-check-input {
   margin-top: 0.3rem;
-}
-
-.newsletter-form .btn-register {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #ef6c00;
-  background-color: black;
-  color: #ef6c00;
-  font-size: 14px;
-  padding: 14px 48px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5647058824);
-}
-
-.newsletter-form .btn-register:hover {
-  background-color: #ef6c00;
-  color: black;
 }
 
 .section-newsletter {
   font-size: 50px;
   color: black;
   text-transform: uppercase;
-  font-weight: bolder;;
+  font-weight: bolder;
 }
 
 /* Style the checkbox input */
@@ -884,12 +863,49 @@ margin-bottom: 0;
   color: black;
 }
 
-
 /* Style the label */
 .newsletter-form .form-check-label {
   font-size: 24px;
   color: black;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   display: block;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.newsletter-form .form-check-input {
+  margin-top: 0.3rem; 
+}
+
+.newsletter-form .form-check-label a {
+  color: black; 
+  text-decoration: none;
+}
+
+
+
+/* Register Button */
+.newsletter-form .btn-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ef6c00;
+  background-color: black;
+  color: #ef6c00;
+  font-size: 17px;
+  padding: 14px 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5647058824);
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.newsletter-form .btn-register:hover {
+  background-color: #ef6c00;
+  color: black;
 }
