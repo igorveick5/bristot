@@ -195,6 +195,8 @@ main .main-bg {
   margin-bottom: 111px;
 }
 
+
+
 /* BRISTOT ACADEMY SECTION */
 
 #cta-academy{
@@ -795,3 +797,87 @@ margin-bottom: 0;
 }
 
 
+/* JOIN COMMUNITY */
+#join-community {
+  padding: 60px 60px;
+}
+
+.newsletter-form .form-control {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.newsletter-form .form-check-label {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  display: block;
+  width: 100%;
+  word-wrap: break-word; 
+  line-height: 1.4;
+}
+
+
+.newsletter-form .form-check-input {
+  margin-top: 0.3rem;
+}
+
+.newsletter-form .btn-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ef6c00;
+  background-color: black;
+  color: #ef6c00;
+  font-size: 14px;
+  padding: 14px 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5647058824);
+}
+
+.newsletter-form .btn-register:hover {
+  background-color: #ef6c00;
+  color: black;
+}
+
+.section-newsletter {
+  font-size: 50px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bolder;;
+}
+
+/* Style the checkbox input */
+.newsletter-form .form-check-input {
+  border: 3px solid black;
+  background-color: transparent; 
+  color: black;
+  width: 30px;
+  height: 30px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* Style when the checkbox is checked */
+.newsletter-form .form-check-input:checked {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+
+/* Style the label */
+.newsletter-form .form-check-label {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  display: block;
+  width: 100%;
+}

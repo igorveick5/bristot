@@ -59,3 +59,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// New Swiper
