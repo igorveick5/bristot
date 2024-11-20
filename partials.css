@@ -13,18 +13,15 @@
   
 }
 
-@media (min-width: 1540px) {
-  .container {
-    max-width: 1500px;
-  }
-}
-
+/* Base styles */
 body {
   font-family: "Brandon Grotesque", sans-serif;
   overflow-x: hidden;
   background-image: url('images/background_sito_bristot.webp');
   background-repeat: repeat;
   background-size: cover;
+  margin: 0;
+  height: 100%;
 }
 
 html, body {
@@ -36,21 +33,79 @@ main {
   position: relative;
 }
 
-main .main-bg {
-  width: 100%; 
-  height: 100vh; 
-  object-fit: cover; 
-  position: absolute;
-}
-
 /* IMAGE CONTAINER */
 .image-container {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh; /* Full viewport height */
   background-size: cover;
   background-position: center;
 }
+
+.main-bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Container with max-width control */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+/* Large screens */
+@media (min-width: 1540px) {
+  .container {
+    max-width: 1500px; 
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1539px) {
+  .container {
+    max-width: 1200px; 
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; 
+    padding: 0 10px; 
+  }
+
+  .image-container {
+    height: 60vh;
+  }
+
+  .main-bg {
+    height: 60vh; 
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; 
+  }
+
+  .image-container {
+    height: 50vh; 
+  }
+
+  .main-bg {
+    height: 50vh; 
+  }
+}
+
 
 
 /* Swiper */
@@ -809,6 +864,157 @@ margin-bottom: 0;
 }
 
 
+/* Large screens (Desktops and larger) */
+@media (min-width: 1540px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/* Medium screens (Tablets, smaller desktops) */
+@media (max-width: 1539px) {
+  .footer .col-md-4 {
+    max-width: 45%;
+  }
+
+  .footer .row {
+    justify-content: flex-start; 
+  }
+}
+
+/* Smaller screens (Mobile devices) */
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    max-width: 33.33%;
+    flex: 1 1 33.33%;
+    margin-bottom: 20px;
+  }
+
+
+  .footer .button-group {
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-top: 20px;
+  }
+
+  .footer-credits {
+    flex-direction: column;
+    text-align: center; 
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+
+  .footer .footer-links li {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links li:nth-child(4),
+  .footer .footer-links li:nth-child(5) {
+    margin-left: auto; 
+  }
+
+
+  .footer .sign-up {
+    order: 1;
+  }
+
+  .footer .follow-us {
+    order: 2;
+  }
+
+  .footer .find-out-more {
+    order: 3;
+  }
+
+  .footer .footer-credits {
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .footer .btn-custom {
+    margin-top: 20px;
+  }
+}
+
+
+/* Very small screens*/
+@media (max-width: 480px) {
+  .footer .col-md-4 {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer .footer-links li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-links li:nth-child(4),
+  .footer .footer-links li:nth-child(5) {
+    margin-left: 0; 
+  }
+
+
+  .footer .social-icons a {
+    font-size: 28px;
+  }
+
+  .footer .btn-custom {
+    padding: 14px 28px;
+    font-size: 10px;
+  }
+
+  .footer .learn-more-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer Credits for very small screens */
+  .footer-credits {
+    text-align: center;
+    align-items: center;
+    padding-top: 10px; 
+  }
+}
+
+
+/* Very small screens (Extra small devices like very small phones) */
+@media (max-width: 480px) {
+  .footer .social-icons a {
+    font-size: 28px; 
+  }
+
+  .footer .btn-custom {
+    padding: 14px 28px; /* Make buttons smaller for small screens */
+    font-size: 10px;
+  }
+
+  .footer .learn-more-links {
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-top: 20px;
+  }
+
+  .footer .learn-more-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-credits {
+    text-align: center; /* Center footer credits */
+    align-items: center; /* Center align the footer credits */
+    padding-top: 10px; /* Adjust padding */
+  }
+}
+
 /* JOIN COMMUNITY */
 #join-community {
   padding: 60px 60px;
@@ -867,7 +1073,7 @@ margin-bottom: 0;
 .newsletter-form .form-check-label {
   font-size: 24px;
   color: black;
-  text-align: left; /* Align text to the left */
+  text-align: left;
   display: block;
   width: 100%;
   margin-bottom: 10px;
