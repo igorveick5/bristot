@@ -721,49 +721,65 @@ main {
 }
 
 
+
+
 /* FOOTER */
 .footer {
   background-color: black;
   color: #ef6c00;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
+/* Header titles */
+.footer h5 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+}
 
+/* Paragraph styling */
 .footer .col-md-4 p {
-  max-width: 250px;
-  line-height: 1.5;
+  max-width: 350px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
+/* Anchor links */
 .footer a {
+  font-size: 20px;
   color: #ef6c00;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .footer a:hover {
-  color: #ef6c00;
+  color: #d55a00;
   text-decoration: underline;
-}
-
-.footer h5 {
-  font-weight: bold;
 }
 
 /* Social icon styling */
 .footer .social-icons a {
   font-size: 32px;
+  margin-right: 15px; 
+  color: #ef6c00; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer .social-icons a:hover {
+  color: #d55a00;
+  transform: scale(1.2);
   text-decoration: none;
 }
 
-/* Styling the 'button-group' to display buttons inline */
+/* Custom buttons */
 .footer .button-group {
   display: flex;
   gap: 20px;
-  margin-top: 20px; 
+  margin-top: 30px;
 }
 
-/* Custom button styling */
 .footer .btn-custom {
   display: inline-flex;
   align-items: center;
@@ -771,85 +787,56 @@ main {
   border: 3px solid #ef6c00;
   background-color: transparent;
   color: #ef6c00;
-  font-size: 12px;
-  padding: 24px 48px;
+  font-size: 16px;
+  padding: 12px 30px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  height: 48px;
+  height: 48px; 
   letter-spacing: 1px;
-  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Button hover effect */
 .footer .btn-custom:hover {
   background-color: #ef6c00;
   color: black;
   text-decoration: none;
 }
 
-/* 'Find out more' section styling */
+/* Find Out More Section */
 .learn-more-links {
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-left: 0;
-  margin-right: 0;
+  justify-content: space-between;
+  gap: 40px; 
 }
 
-.learn-more-links li {
-  margin-bottom: 5px;
-}
-
-.learn-more-links li:last-child {
-  margin-bottom: 0;
-}
-
-.learn-more-links .list-unstyled:last-child {
-margin-bottom: 0;
-}
-
-.footer-credits {
-  border-top: 3px solid #ef6c00;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.footer-text,
-.vat-number {
-  color: #ef6c00;
+.learn-more-links ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-/* Footer container styling */
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.learn-more-links li {
+  margin-bottom: 10px;
 }
 
-/* Flexbox styling for responsive footer layout */
-.footer .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.learn-more-links a {
+  font-size: 20px;
+  color: #ef6c00;
+  text-decoration: none;
 }
 
-.footer .col-md-4 {
-  flex: 1;
-  min-width: 280px;
-  max-width: 33.33%; 
+.learn-more-links a:hover {
+  color: #d55a00;
+  text-decoration: underline;
 }
 
-.footer .col-md-4.mb-4 {
-  position: relative;
-}
-
-.footer .col-md-4.mb-4:nth-child(2) .button-group {
-  margin-top: 42px;
-}
-
+/* Footer credits */
 .footer-credits {
+  border-top: 2px solid #ef6c00;
+  padding-top: 20px;
+  margin-top: 40px;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -857,163 +844,19 @@ margin-bottom: 0;
 
 .footer .footer-links a {
   margin-left: 20px;
+  font-size: 18px;
 }
 
 .footer .footer-links a:hover {
   text-decoration: underline;
 }
 
-
-/* Large screens (Desktops and larger) */
-@media (min-width: 1540px) {
-  .container {
-    max-width: 1500px;
-  }
-}
-
-/* Medium screens (Tablets, smaller desktops) */
-@media (max-width: 1539px) {
-  .footer .col-md-4 {
-    max-width: 45%;
-  }
-
-  .footer .row {
-    justify-content: flex-start; 
-  }
-}
-
-/* Smaller screens (Mobile devices) */
-@media (max-width: 768px) {
-  .footer .col-md-4 {
-    max-width: 33.33%;
-    flex: 1 1 33.33%;
-    margin-bottom: 20px;
-  }
-
-
-  .footer .button-group {
-    flex-direction: column;
-    align-items: flex-start; 
-    margin-top: 20px;
-  }
-
-  .footer-credits {
-    flex-direction: column;
-    text-align: center; 
-    align-items: center;
-    padding-top: 10px;
-  }
-
-  .footer .footer-links {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-  }
-
-  .footer .footer-links li {
-    width: 48%;
-    margin-bottom: 10px;
-  }
-
-  .footer .footer-links li:nth-child(4),
-  .footer .footer-links li:nth-child(5) {
-    margin-left: auto; 
-  }
-
-
-  .footer .sign-up {
-    order: 1;
-  }
-
-  .footer .follow-us {
-    order: 2;
-  }
-
-  .footer .find-out-more {
-    order: 3;
-  }
-
-  .footer .footer-credits {
-    text-align: center;
-    align-items: center;
-    padding-top: 10px;
-  }
-
-  .footer .btn-custom {
-    margin-top: 20px;
-  }
+.footer .col-md-4:nth-child(2) .button-group {
+  margin-top: 85px;
 }
 
 
-/* Very small screens*/
-@media (max-width: 480px) {
-  .footer .col-md-4 {
-    max-width: 100%;
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
 
-  .footer .footer-links li {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .footer .footer-links li:nth-child(4),
-  .footer .footer-links li:nth-child(5) {
-    margin-left: 0; 
-  }
-
-
-  .footer .social-icons a {
-    font-size: 28px;
-  }
-
-  .footer .btn-custom {
-    padding: 14px 28px;
-    font-size: 10px;
-  }
-
-  .footer .learn-more-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Footer Credits for very small screens */
-  .footer-credits {
-    text-align: center;
-    align-items: center;
-    padding-top: 10px; 
-  }
-}
-
-
-/* Very small screens (Extra small devices like very small phones) */
-@media (max-width: 480px) {
-  .footer .social-icons a {
-    font-size: 28px; 
-  }
-
-  .footer .btn-custom {
-    padding: 14px 28px; /* Make buttons smaller for small screens */
-    font-size: 10px;
-  }
-
-  .footer .learn-more-links {
-    flex-direction: column;
-    align-items: flex-start; 
-    margin-top: 20px;
-  }
-
-  .footer .learn-more-links li {
-    margin-bottom: 10px;
-  }
-
-  .footer-credits {
-    text-align: center; /* Center footer credits */
-    align-items: center; /* Center align the footer credits */
-    padding-top: 10px; /* Adjust padding */
-  }
-}
 
 /* JOIN COMMUNITY */
 #join-community {
