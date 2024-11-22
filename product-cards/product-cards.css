@@ -695,7 +695,7 @@ main {
 
 /* PRODUCT CARD */
 .product-container {
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 30px;
   margin-top: 100px;
@@ -803,7 +803,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .col-6 {
