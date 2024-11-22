@@ -698,9 +698,9 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 30px;
+  margin-top: 100px;
 }
 
-/* Product Card */
 .product-card {
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
@@ -712,7 +712,7 @@ main {
 .product-image {
   position: relative;
   width: 100%;
-  padding-top: 110%;
+  padding-top: 130%;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -726,14 +726,18 @@ main {
   left: 15px;
   background: #ff7a00;
   color: #000;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 /* Product Details */
@@ -818,9 +822,16 @@ main {
   text-align: center;
 }
 
-.product-filter-subtitle .sezioneTitolo h2 {
+.product-filter-subtitle {
   font-size: 50px;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bolder;
+  color: #000;
+}
+
+.product-filter-count {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000;
 }
