@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ground Coffee | Caffè Bristot</title>
+    <link rel="icon" href="/product-details/images/favicion.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+    <link rel="stylesheet" href="/product-details/product-details.css" type="text/css">
+    
+</head>
+<body>
+      <!-- NAVBAR -->
+      <header class="header">
+        <nav class="navbar py-4">
+          <a href="/homepage/homepage.html">
+            <img
+              class="logo-image"
+              src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/logo/Logo%20Bristot%20payoff.svg"
+              alt="Logo Bristot"
+            />
+          </a>
+  
+          <div class="nav-links-img">
+            <ul class="nav-links-container">
+              <li class="nav-links">
+                <a href="/coffee-shop/shop.html">COFFEE</a>
+              </li>
+              <li class="nav-links"><a href="#">SUPPORT</a></li>
+            </ul>
+  
+            <div class="nav-icons">
+              <a href="/login" class="nav-icon-link">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/user.svg"
+                  alt="User Icon"
+                />
+              </a>
+              <a href="/search" class="nav-icon-link">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/search-small.svg"
+                  alt="Search Icon"
+                />
+              </a>
+              <a href="/cart" class="nav-icon-link">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/cart.svg"
+                  alt="Cart Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <!-- YOU MAY ALSO LIKE SECTION -->
+          <section id="wc_product_list" class="bg-cover bg-texture py-7">
+            <div class="product-container">
+              <!-- Filter Section -->
+              <div class="row justify-content-end text-center pb-4">
+                <div class="product-filter-selected col-12 col-md-9">
+                  <h2 class="product-filter-subtitle sezioneTitolo">
+                    <span>You may also like...</span>
+                  </h2>
+                </div>
+              </div>
+         <!-- Products Section -->
+          <div class="col-12 col-md pt-5 pt-md-0">
+            <div class="product-section row gy-5 product-list product-list-results">
+              <!-- Product Card 1 -->
+              <div class="col-6 col-sm-6 col-lg-4 product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Capsule-x30-intenso-taglio1548x1824.png');
+                  "
+                >
+                  <span class="discount-badge">-20%</span>
+                  <a href="#" class="discover-btn">Discover</a>
+                </div>
+                <div class="product-details text-center">
+                  <span class="span-product-name">capsules</span>
+                  <h3 class="product-name">INTENSO</h3>
+                  <p class="product-price">
+                    <span class="old-price">7,99€</span>
+                    <span class="new-price">6,39€ <span class="span-price">/ 30 CAPS</span></span>
+                  </p>
+                  <button class="add-to-cart-btn">
+                    <img
+                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                      alt="Add to Cart"
+                    />
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card 2 -->
+              <div class="col-6 col-sm-6 col-lg-4 product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Classico-Grani-1kg-CaffeGrani-taglio-1548x1824-1.png');
+                  "
+                >
+                  <span class="discount-badge">-20%</span>
+                  <a href="#" class="discover-btn">Discover</a>
+                </div>
+                <div class="product-details text-center">
+                  <span class="span-product-name">coffee beans</span>
+                  <h3 class="product-name">CLASSICO</h3>
+                  <p class="product-price">
+                    <span class="old-price">14,99€</span>
+                    <span class="new-price">11,99€ <span class="span-price">/ 1</span></span>
+                  </p>
+                  <button class="add-to-cart-btn">
+                    <img
+                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                      alt="Add to Cart"
+                    />
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card 3 -->
+              <div class="col-6 col-sm-6 col-lg-4 product-card">
+                <div
+                  class="product-image"
+                  style="
+                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Espresso-250g-taglio-1548x1824-1.png');
+                  "
+                >
+                  <span class="discount-badge">-20%</span>
+                  <a href="#" class="discover-btn">Discover</a>
+                </div>
+                <div class="product-details text-center">
+                  <span class="span-product-name">ground coffee</span>
+                  <h3 class="product-name">ESPRESSO</h3>
+                  <p class="product-price">
+                    <span class="old-price">5,49€</span>
+                    <span class="new-price">4,39€ <span class="span-price">/ 1</span></span>
+                  </p>
+                  <button class="add-to-cart-btn">
+                    <img
+                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                      alt="Add to Cart"
+                    />
+                  </button>
+                </div>
+              </div>
+      </section>
+
+
+      <!-- RELATED PRODUCTS SECTION -->
+      <section id="wc_product_list" class="bg-cover bg-texture py-7">
+        <div class="product-container">
+          <!-- Filter Section -->
+          <div class="row justify-content-end text-center pb-4">
+            <div class="product-filter-selected col-12 col-md-9">
+              <h2 class="product-filter-subtitle sezioneTitolo">
+                <span>Related Products</span>
+              </h2>
+            </div>
+          </div>
+     <!-- Products Section -->
+      <div class="col-12 col-md pt-5 pt-md-0">
+        <div class="product-section row gy-5 product-list product-list-results">
+          <!-- Product Card 1 -->
+          <div class="col-6 col-sm-6 col-lg-4 product-card">
+            <div
+              class="product-image"
+              style="
+                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Mattonella-x2-Classico-taglio-1548x1824-1.png');
+              "
+            >
+              <span class="discount-badge">-20%</span>
+              <a href="#" class="discover-btn">Discover</a>
+            </div>
+            <div class="product-details text-center">
+              <span class="span-product-name">ground coffee</span>
+              <h3 class="product-name">CLASSICO BIPACK</h3>
+              <p class="product-price">
+                <span class="old-price">6,49€</span>
+                <span class="new-price">5,19€ <span class="span-price">/ 2x250 G</span></span>
+              </p>
+              <button class="add-to-cart-btn">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                  alt="Add to Cart"
+                />
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="col-6 col-sm-6 col-lg-4 product-card">
+            <div
+              class="product-image"
+              style="
+                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Mattonella-x4-Classico-taglio-1548x1824-1.png');
+              "
+            >
+              <span class="discount-badge">-20%</span>
+              <a href="#" class="discover-btn">Discover</a>
+            </div>
+            <div class="product-details text-center">
+              <span class="span-product-name">ground coffee</span>
+              <h3 class="product-name">CLASSICO QUADRIPACK</h3>
+              <p class="product-price">
+                <span class="old-price">14,99€</span>
+                <span class="new-price">9,59€ <span class="span-price">/ 4x250 G</span></span>
+              </p>
+              <button class="add-to-cart-btn">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                  alt="Add to Cart"
+                />
+              </button>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="col-6 col-sm-6 col-lg-4 product-card">
+            <div
+              class="product-image"
+              style="
+                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Decaffe-250g-taglio-1548x1824-1.png');
+              "
+            >
+              <span class="discount-badge">-20%</span>
+              <a href="#" class="discover-btn">Discover</a>
+            </div>
+            <div class="product-details text-center">
+              <span class="span-product-name">ground coffee</span>
+              <h3 class="product-name">DECAFFE</h3>
+              <p class="product-price">
+                <!-- <span class="old-price">5,49€ / 1</span> -->
+                <span class="new-price">5,99€ <span class="span-price">/ 1</span></span>
+              </p>
+              <button class="add-to-cart-btn">
+                <img
+                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                  alt="Add to Cart"
+                />
+              </button>
+            </div>
+          </div>
+          
+  </section>
+
+       <!-- SHIPPING SECTION -->
+    <section id="shipping-section" class="bg-cover bg-texture pb-5">
+        <div class="shipping-container">
+          <div class="shipping-size row">
+            <div class="col-6 col-lg-3 col-xl text-center p-0">
+              <a class="row h-100 m-0 p-3 p-xl-5" href="">
+                <div class="col-12 d-flex justify-content-center py-5 pt-lg-0">
+                  <img
+                    class="img-fluid"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/spedizioni.svg"
+                    alt=""
+                  />
+                  <img
+                    class="img-fluid hover"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/spedizioni-orange.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col 12">
+                  <p><strong>SHIPPING</strong></p>
+                  <p>We are shipping only in Italy</p>
+                  <p>Free shipping over 49 euro</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3 col-xl text-center p-0">
+              <a class="row h-100 m-0 p-3 p-xl-5" href="">
+                <div class="col-12 d-flex justify-content-center py-5 pt-lg-0">
+                  <img
+                    class="img-fluid"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/reso.svg"
+                    alt=""
+                  />
+                  <img
+                    class="img-fluid hover"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/reso-orange.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-12">
+                  <p><strong>RETURN</strong></p>
+                  <p>Quick and safe return</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3 col-xl text-center p-0">
+              <a class="row h-100 m-0 p-3 p-xl-5" href="">
+                <div class="col-12 d-flex justify-content-center py-5 pt-lg-0">
+                  <img
+                    class="img-fluid"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/servizio-clienti.svg"
+                    alt=""
+                  />
+                  <img
+                    class="img-fluid hover"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/servizio-clienti-orange.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-12">
+                  <p><strong>CUSTOMER SERVICE</strong></p>
+                  <p>Please send an email to: customer@caffebristot.com</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3 col-xl text-center p-0">
+              <a class="row h-100 m-0 p-3 p-xl-5" href="">
+                <div class="col-12 d-flex justify-content-center py-5 pt-lg-0">
+                  <img
+                    class="img-fluid"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/pagamenti.svg"
+                    alt=""
+                  />
+                  <img
+                    class="img-fluid hover"
+                    src="https://www.caffebristot.com/wp-content/uploads/2021/07/pagamenti-orange.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-12">
+                  <p><strong>SECURE PAYMENT</strong></p>
+                  <p>We guarantee payment security</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       
+
+
+      <!-- FOOTER -->
+    <div class="footer-container">
+        <footer class="footer py-5">
+          <div class="container">
+            <div class="row">
+              <!-- Sign up -->
+              <div class="col-md-4 mb-4">
+                <h5>SIGN UP</h5>
+                <p>
+                  Register to receive our exclusive offers, more information about
+                  our campaigns, our courses, our events and much more.
+                </p>
+                <div class="button-group">
+                  <a href="" class="btn btn-custom">Register</a>
+                </div>
+              </div>
+  
+              <!-- Follow us -->
+              <div class="col-md-4 mb-4">
+                <h5>FOLLOW US</h5>
+                <div class="social-icons">
+                  <a href="#" class="me-3"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="button-group">
+                  <a href="" class="btn btn-custom"
+                    >Visit the Institutional Website</a
+                  >
+                </div>
+              </div>
+  
+              <!-- Support -->
+              <div class="col-md-4 mb-4">
+                <h5>SUPPORT</h5>
+                <ul class="list-unstyled">
+                  <li><a href="">Return</a></li>
+                  <li><a href="">Customer Service</a></li>
+                  <li><a href="">Payments</a></li>
+                </ul>
+                <div class="support-icons">
+                  <i class="fab fa-paypal"></i>
+                  <i class="fas fa-credit-card"></i>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CREDITS -->
+            <div
+              class="footer-credits mt-4 pt-4 d-flex justify-content-between align-items-center"
+            >
+              <p class="footer-text mb-0">
+                Official Website of procaffé S.p.A. - © All rights reserved - VAT
+                number 00937660256
+              </p>
+              <div class="footer-links">
+                <a href="" class="me-3">Privacy policy</a>
+                <a href="">Cookie policy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"
+      ></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+      <script src="product-details.js"></script>
+</body>
+</html>
