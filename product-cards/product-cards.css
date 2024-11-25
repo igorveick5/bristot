@@ -235,7 +235,7 @@ main {
 
 
 .swiper-slide:hover {
-  transform:scaleY(1.04);
+  transform: scaleY(1.04);
 }
 
 .swiper-slide:hover img {
@@ -596,7 +596,7 @@ main {
 }
 
 .footer a:hover {
-  color: #d55a00;
+  color: #ef6c00;
   text-decoration: underline;
 }
 
@@ -686,6 +686,7 @@ main {
 
 .footer .footer-links a:hover {
   text-decoration: underline;
+  color: #ef6c00;
 }
 
 /* Support icons below links */
@@ -737,15 +738,15 @@ main {
   position: relative;
   width: 100%;
   padding-top: 120%;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   border-radius: 15px;
-  transition: transform 0.3s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
   overflow: hidden;
 }
 
 .product-image:hover {
-  transform: scale(1.03);
+  background-size: 110%; 
   filter: brightness(0.9);
 }
 
@@ -768,6 +769,37 @@ main {
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+.discover-btn {
+  position: absolute;
+  bottom: -5px;
+  right: -45px;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #ef6c00;
+  border: 3px solid #ef6c00;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-image:hover .discover-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.discover-btn:hover {
+  background-color: #ef6c00;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Product Details */
