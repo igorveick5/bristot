@@ -254,6 +254,24 @@ main {
   text-align: center;
   overflow: hidden;
   border-radius: 10px;
+  cursor: pointer;
+  transform-origin: top center;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scaleY(1.04);
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+.swiper-slide:hover .text-overlay h3 {
+  color: #ef6c00;
+  transition: color 0.3s ease;
 }
 
 /* Add a darker overlay on the image */
@@ -325,15 +343,11 @@ main {
 }
 
 .swiper-slide .text-overlay .buy-btn:hover {
-  background-color: #d55a00;
-  transform: scale(1.1);
+  background-color: #ef6c00;
+  color: #000;
 }
 
 /* SWIPER NAVIGATION */
-.swiper-navigation {
-  z-index: 3;
-  position: relative;
-}
 
 .nav--item {
   visibility: visible;
@@ -346,37 +360,39 @@ main {
   opacity: 0;
 }
 
-.swiper-navigation .swiper-previous,
-.swiper-navigation .swiper-next {
+.swiper-previous,
+.swiper-next {
   position: absolute;
 }
 
-.swiper-navigation .swiper-previous {
+.swiper-previous {
   left: -3rem;
+  z-index: 999;
 }
 
-.swiper-navigation .swiper-next {
+.swiper-next {
   right: -3rem;
+  z-index: 999;
 }
 
-.swiper-navigation .swiper-previous #Ellisse_2,
+.swiper-previous #Ellisse_2,
 .swiper-navigation .swiper-next #Ellisse_2 {
   transition: all 0.2s ease;
 }
 
 /* Hover effect SVG */
-.swiper-navigation .swiper-previous:hover #Tracciato_39,
+.swiper-previous:hover #Tracciato_39,
 .swiper-navigation .swiper-next:hover #Tracciato_39 {
   stroke: black;
 }
 
-.swiper-navigation .swiper-previous:hover #Tracciato_40,
-.swiper-navigation .swiper-next:hover #Tracciato_40 {
+.swiper-previous:hover #Tracciato_40,
+.swiper-next:hover #Tracciato_40 {
   stroke: black;
 }
 
-.swiper-navigation .swiper-previous:hover #Ellisse_2,
-.swiper-navigation .swiper-next:hover #Ellisse_2 {
+.swiper-previous:hover #Ellisse_2,
+.swiper-next:hover #Ellisse_2 {
   fill: #ef6c00;
   stroke: #ef6c00;
 }

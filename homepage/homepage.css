@@ -137,6 +137,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 1;
+  background-size: 100%;
 }
 
 /* Hover effect on images */
@@ -161,10 +162,10 @@ main {
 }
 
 /* SWIPER NAVIGATION */
-.swiper-navigation {
+/* .swiper-navigation {
   z-index: 2;
   position: relative;
-}
+} */
 
 .nav--item {
   visibility: visible;
@@ -177,38 +178,42 @@ main {
   opacity: 0;
 }
 
-.swiper-navigation .swiper-previous,
-.swiper-navigation .swiper-next {
+.swiper-previous,
+.swiper-next {
   position: absolute;
 }
 
-.swiper-navigation .swiper-previous {
+.swiper-previous {
   left: -3rem;
+  top: 10rem;
+  z-index: 999;
 }
 
-.swiper-navigation .swiper-next {
+.swiper-next {
   right: -3rem;
+  top: 10rem;
+  z-index: 999;
 }
 
-.swiper-navigation .swiper-previous #Ellisse_2,
-.swiper-navigation .swiper-next #Ellisse_2 {
+.swiper-previous #Ellisse_2,
+.swiper-next #Ellisse_2 {
   transition: all 0.2s ease;
 }
 
 
 /* Hover effect SVG */
-.swiper-navigation .swiper-previous:hover #Tracciato_39,
-.swiper-navigation .swiper-next:hover #Tracciato_39 {
+.swiper-previous:hover #Tracciato_39,
+.swiper-next:hover #Tracciato_39 {
   stroke: black;
 }
 
-.swiper-navigation .swiper-previous:hover #Tracciato_40,
-.swiper-navigation .swiper-next:hover #Tracciato_40 {
+.swiper-previous:hover #Tracciato_40,
+.swiper-next:hover #Tracciato_40 {
   stroke: black;
 }
 
-.swiper-navigation .swiper-previous:hover #Ellisse_2,
-.swiper-navigation .swiper-next:hover #Ellisse_2 {
+.swiper-previous:hover #Ellisse_2,
+.swiper-next:hover #Ellisse_2 {
   fill: #ef6c00;
   stroke: #ef6c00;
 }
@@ -260,7 +265,6 @@ main {
 #product-carousel {
   margin-bottom: 111px;
 }
-
 
 
 /* BRISTOT ACADEMY SECTION */

@@ -441,7 +441,7 @@ main {
 .shipping-container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Stretch to make columns equal height */
+  align-items: stretch;
   width: 100%;
   max-width: 1400px;
   margin: 150px auto 0;
@@ -470,9 +470,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px; /* Increased padding for more spacing */
+  padding: 30px;
   position: relative;
-  box-sizing: border-box; /* Ensure padding and borders are considered in width/height */
 }
 
 .shipping-container a:hover {
@@ -482,7 +481,7 @@ main {
 
 /* Icon styling */
 .shipping-container .img-fluid {
-  width: 100px; /* Larger icon size */
+  width: 100px;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -497,19 +496,18 @@ main {
 
 .shipping-container a:hover .img-fluid.hover {
   opacity: 1;
-  transform: scale(1.2);
 }
 
 /* Text styling */
 .shipping-container p {
   margin: 10px 0;
-  font-size: 20px; /* Increased text size */
-  line-height: 1.8; /* Better readability */
+  font-size: 20px;
+  line-height: 1.8;
   text-align: center;
 }
 
 .shipping-container p strong {
-  font-size: 24px; /* Increased title size */
+  font-size: 24px;
   display: block;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -527,7 +525,7 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .shipping-container .col-6:first-child {
@@ -771,6 +769,7 @@ main {
   text-align: center;
 }
 
+/* Discover button */
 .discover-btn {
   position: absolute;
   bottom: -5px;
