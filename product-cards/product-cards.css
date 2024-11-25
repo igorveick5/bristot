@@ -213,7 +213,6 @@ main {
   width: 100%;
   height: auto;
   right: 10%;
-  transform: translateX(10%);
 }
 
 .swiper-wrapper {
@@ -370,6 +369,7 @@ main {
 
 /* Style for the main heading */
 .swiper-h2 {
+  transform: translateX(-25%);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 50px;
@@ -400,6 +400,7 @@ main {
 }
 
 .swiper-p {
+  transform: translateX(-9%);
   font-size: 24px;
   font-weight: 500;
   color: black;
@@ -710,6 +711,24 @@ main {
   margin-right: 0;
 }
 
+/* FILTERS */
+
+.form-control.form-select {
+  max-width: 400px;
+  background-color: transparent;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  font-size: 22px; 
+  border-radius: 0;
+  border-bottom: 3px solid #000;
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 /* PRODUCT CARD */
 .product-container {
@@ -723,7 +742,7 @@ main {
 .product-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 800px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
@@ -880,12 +899,11 @@ main {
 }
 
 
-
 /* Responsive Grid */
-.row {
+.product-section.row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   justify-content: flex-start;
 }
 
