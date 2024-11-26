@@ -125,194 +125,413 @@
 
       
       <!-- YOU MAY ALSO LIKE SECTION -->
-          <section id="wc_product_list" class="bg-cover bg-texture py-7">
-            <div class="product-container">
-              <!-- Filter Section -->
-              <div class="row justify-content-end text-center pb-4">
-                <div class="product-filter-selected col-12 col-md-9">
-                  <h2 class="product-filter-subtitle sezioneTitolo">
-                    <span>You may also like...</span>
-                  </h2>
-                </div>
+      <div id="product-carousel" class="offset-top h-100">
+        <div class="container h-100 py-5">
+          <div class="row h-100">
+            <div class="col-12 d-flex justify-content-center flex-column">
+              <div class="swiper-section-text">
+                <h2 class="swiper-h2">You may also like...</h2>
               </div>
-         <!-- Products Section -->
-          <div class="col-12 col-md pt-5 pt-md-0">
-            <div class="product-section row gy-5 product-list product-list-results">
-              <!-- Product Card 1 -->
-              <div class="col-6 col-sm-6 col-lg-4 product-card">
-                <div
-                  class="product-image"
-                  style="
-                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Capsule-x30-intenso-taglio1548x1824.png');
-                  "
-                >
-                  <span class="discount-badge">-20%</span>
-                  <a href="#" class="discover-btn">Discover</a>
+              <div class="swiper position-relative m-0 overflow-visible">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Classico-Grani-1kg-CaffeGrani-taglio-1548x1824-1.png');
+                      "
+                    >
+                      <span class="discount-badge">-20%</span>
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">coffee beans</span>
+                      <h3 class="product-name">CLASSICO</h3>
+                      <p class="product-price">
+                        <span class="old-price">14,99€</span>
+                        <span class="new-price">11,99€ <span class="span-price">/ 1</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Capsule-x30-intenso-taglio1548x1824.png');
+                      "
+                    >
+                      <span class="discount-badge">-20%</span>
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">capsules</span>
+                      <h3 class="product-name">INTENSO</h3>
+                      <p class="product-price">
+                        <span class="old-price">7,99€</span>
+                        <span class="new-price">6,39€ <span class="span-price">/ 30 CAPS</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Espresso-250g-taglio-1548x1824-1.png');
+                      "
+                    >
+                      <span class="discount-badge">-20%</span>
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">ground coffee</span>
+                      <h3 class="product-name">ESPRESSO</h3>
+                      <p class="product-price">
+                        <span class="old-price">5,49€</span>
+                        <span class="new-price">4,39€ <span class="span-price">/ 1</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="product-details text-center">
-                  <span class="span-product-name">capsules</span>
-                  <h3 class="product-name">INTENSO</h3>
-                  <p class="product-price">
-                    <span class="old-price">7,99€</span>
-                    <span class="new-price">6,39€ <span class="span-price">/ 30 CAPS</span></span>
-                  </p>
-                  <button class="add-to-cart-btn">
-                    <img
-                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                      alt="Add to Cart"
-                    />
-                  </button>
-                </div>
+  
+                <!-- Swiper Navigation -->
+                  <div class="swiper-previous nav--item">
+                    <!-- SVG for "previous" arrow -->
+                    <svg
+                      class="arrow-prev"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                    >
+                      <g id="Freccia" transform="translate(0 68) rotate(-90)">
+                        <g
+                          id="Ellisse_2"
+                          data-name="Ellisse 2"
+                          stroke="#ef6c00"
+                          stroke-width="3"
+                        >
+                          <circle cx="34" cy="34" r="34" stroke="none" />
+                          <circle cx="34" cy="34" r="32.5" fill="none" />
+                        </g>
+                        <g
+                          id="Icon_feather-arrow-down"
+                          data-name="Icon feather-arrow-down"
+                          transform="translate(24 21)"
+                        >
+                          <path
+                            id="Tracciato_39"
+                            data-name="Tracciato 39"
+                            d="M0,27.7V0"
+                            transform="translate(10.5)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Tracciato_40"
+                            data-name="Tracciato 40"
+                            d="M21,10.5,10.5,0,0,10.5"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-width="3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="swiper-next nav--item">
+                    <!-- SVG for "next" arrow -->
+                    <svg
+                      class="arrow-next"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                    >
+                      <g id="Freccia" transform="translate(0 68) rotate(-90)">
+                        <g
+                          id="Ellisse_2"
+                          data-name="Ellisse 2"
+                          stroke="#ef6c00"
+                          stroke-width="3"
+                        >
+                          <circle cx="34" cy="34" r="34" stroke="none" />
+                          <circle cx="34" cy="34" r="32.5" fill="none" />
+                        </g>
+                        <g
+                          id="Icon_feather-arrow-down"
+                          data-name="Icon feather-arrow-down"
+                          transform="translate(24 19.299)"
+                        >
+                          <path
+                            id="Tracciato_39"
+                            data-name="Tracciato 39"
+                            d="M0,0V27.7"
+                            transform="translate(10.5)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Tracciato_40"
+                            data-name="Tracciato 40"
+                            d="M21,0,10.5,10.5,0,0"
+                            transform="translate(0 17.201)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-width="3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+  
               </div>
-              <!-- Product Card 2 -->
-              <div class="col-6 col-sm-6 col-lg-4 product-card">
-                <div
-                  class="product-image"
-                  style="
-                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Classico-Grani-1kg-CaffeGrani-taglio-1548x1824-1.png');
-                  "
-                >
-                  <span class="discount-badge">-20%</span>
-                  <a href="#" class="discover-btn">Discover</a>
-                </div>
-                <div class="product-details text-center">
-                  <span class="span-product-name">coffee beans</span>
-                  <h3 class="product-name">CLASSICO</h3>
-                  <p class="product-price">
-                    <span class="old-price">14,99€</span>
-                    <span class="new-price">11,99€ <span class="span-price">/ 1</span></span>
-                  </p>
-                  <button class="add-to-cart-btn">
-                    <img
-                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                      alt="Add to Cart"
-                    />
-                  </button>
-                </div>
-              </div>
-              <!-- Product Card 3 -->
-              <div class="col-6 col-sm-6 col-lg-4 product-card">
-                <div
-                  class="product-image"
-                  style="
-                    background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Espresso-250g-taglio-1548x1824-1.png');
-                  "
-                >
-                  <span class="discount-badge">-20%</span>
-                  <a href="#" class="discover-btn">Discover</a>
-                </div>
-                <div class="product-details text-center">
-                  <span class="span-product-name">ground coffee</span>
-                  <h3 class="product-name">ESPRESSO</h3>
-                  <p class="product-price">
-                    <span class="old-price">5,49€</span>
-                    <span class="new-price">4,39€ <span class="span-price">/ 1</span></span>
-                  </p>
-                  <button class="add-to-cart-btn">
-                    <img
-                      src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                      alt="Add to Cart"
-                    />
-                  </button>
-                </div>
-              </div>
-      </section>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <!-- RELATED PRODUCTS SECTION -->
-      <section id="wc_product_list" class="bg-cover bg-texture py-7">
-        <div class="product-container">
-          <!-- Filter Section -->
-          <div class="row justify-content-end text-center pb-4">
-            <div class="product-filter-selected col-12 col-md-9">
-              <h2 class="product-filter-subtitle sezioneTitolo">
-                <span>Related Products</span>
-              </h2>
+      <div id="product-carousel" class="offset-top h-100">
+        <div class="container h-100 py-5">
+          <div class="row h-100">
+            <div class="col-12 d-flex justify-content-center flex-column">
+              <div class="swiper-section-text">
+                <h2 class="swiper-h2">Related Products</h2>
+              </div>
+              <div class="swiper position-relative m-0 overflow-visible">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Decaffe-250g-taglio-1548x1824-1.png');
+                      "
+                    >
+                      <!-- <span class="discount-badge">-20%</span> -->
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">ground coffee</span>
+                      <h3 class="product-name">DECAFFE</h3>
+                      <p class="product-price">
+                        <!-- <span class="old-price">5,49€</span> -->
+                        <span class="new-price-black">5,99€ <span class="span-price">/ 1</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Bio-250g-taglio-1548x1824_no_fairtrade2024.png');
+                      "
+                    >
+                      <!-- <span class="discount-badge">-20%</span> -->
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">ground coffee</span>
+                      <h3 class="product-name">BIO ORGANIC</h3>
+                      <p class="product-price">
+                        <!-- <span class="old-price">5,49€</span> -->
+                        <span class="new-price-black">6,49€ <span class="span-price">/ 1</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/06/Mattonella-ClassicoOro-x2-taglio-1548x1824-1.png');
+                      "
+                    >
+                      <!-- <span class="discount-badge">-20%</span> -->
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">ground coffee</span>
+                      <h3 class="product-name">CLASSICO ORO</h3>
+                      <p class="product-price">
+                        <!-- <span class="old-price">5,49€</span> -->
+                        <span class="new-price-black">7,99€ <span class="span-price">/ 2x250 G</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="col-6 col-sm-6 col-lg-4 product-card">
+                    <div
+                      class="product-image"
+                      style="
+                        background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/100x100Arabica-250g-taglio-1548x1824-1.png');
+                      "
+                    >
+                      <!-- <span class="discount-badge">-20%</span> -->
+                      <a href="#" class="discover-btn">Discover</a>
+                    </div>
+                    <div class="product-details text-center">
+                      <span class="span-product-name">ground coffee</span>
+                      <h3 class="product-name">100% ARABICA</h3>
+                      <p class="product-price">
+                        <!-- <span class="old-price">5,49€</span> -->
+                        <span class="new-price-black">5,99€ <span class="span-price">/ 1</span></span>
+                      </p>
+                      <button class="add-to-cart-btn">
+                        <img
+                          src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
+                          alt="Add to Cart"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Swiper Navigation -->
+                  <div class="swiper-previous nav--item">
+                    <!-- SVG for "previous" arrow -->
+                    <svg
+                      class="arrow-prev"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                    >
+                      <g id="Freccia" transform="translate(0 68) rotate(-90)">
+                        <g
+                          id="Ellisse_2"
+                          data-name="Ellisse 2"
+                          stroke="#ef6c00"
+                          stroke-width="3"
+                        >
+                          <circle cx="34" cy="34" r="34" stroke="none" />
+                          <circle cx="34" cy="34" r="32.5" fill="none" />
+                        </g>
+                        <g
+                          id="Icon_feather-arrow-down"
+                          data-name="Icon feather-arrow-down"
+                          transform="translate(24 21)"
+                        >
+                          <path
+                            id="Tracciato_39"
+                            data-name="Tracciato 39"
+                            d="M0,27.7V0"
+                            transform="translate(10.5)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Tracciato_40"
+                            data-name="Tracciato 40"
+                            d="M21,10.5,10.5,0,0,10.5"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-width="3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="swiper-next nav--item">
+                    <!-- SVG for "next" arrow -->
+                    <svg
+                      class="arrow-next"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="68"
+                      height="68"
+                      viewBox="0 0 68 68"
+                    >
+                      <g id="Freccia" transform="translate(0 68) rotate(-90)">
+                        <g
+                          id="Ellisse_2"
+                          data-name="Ellisse 2"
+                          stroke="#ef6c00"
+                          stroke-width="3"
+                        >
+                          <circle cx="34" cy="34" r="34" stroke="none" />
+                          <circle cx="34" cy="34" r="32.5" fill="none" />
+                        </g>
+                        <g
+                          id="Icon_feather-arrow-down"
+                          data-name="Icon feather-arrow-down"
+                          transform="translate(24 19.299)"
+                        >
+                          <path
+                            id="Tracciato_39"
+                            data-name="Tracciato 39"
+                            d="M0,0V27.7"
+                            transform="translate(10.5)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                          />
+                          <path
+                            id="Tracciato_40"
+                            data-name="Tracciato 40"
+                            d="M21,0,10.5,10.5,0,0"
+                            transform="translate(0 17.201)"
+                            fill="none"
+                            stroke="#ef6c00"
+                            stroke-width="3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+  
+              </div>
             </div>
           </div>
-     <!-- Products Section -->
-      <div class="col-12 col-md pt-5 pt-md-0">
-        <div class="product-section row gy-5 product-list product-list-results">
-          <!-- Product Card 1 -->
-          <div class="col-6 col-sm-6 col-lg-4 product-card">
-            <div
-              class="product-image"
-              style="
-                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Mattonella-x2-Classico-taglio-1548x1824-1.png');
-              "
-            >
-              <span class="discount-badge">-20%</span>
-              <a href="#" class="discover-btn">Discover</a>
-            </div>
-            <div class="product-details text-center">
-              <span class="span-product-name">ground coffee</span>
-              <h3 class="product-name">CLASSICO BIPACK</h3>
-              <p class="product-price">
-                <span class="old-price">6,49€</span>
-                <span class="new-price">5,19€ <span class="span-price">/ 2x250 G</span></span>
-              </p>
-              <button class="add-to-cart-btn">
-                <img
-                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                  alt="Add to Cart"
-                />
-              </button>
-            </div>
-          </div>
-          <!-- Product Card 2 -->
-          <div class="col-6 col-sm-6 col-lg-4 product-card">
-            <div
-              class="product-image"
-              style="
-                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/11/Mattonella-x4-Classico-taglio-1548x1824-1.png');
-              "
-            >
-              <span class="discount-badge">-20%</span>
-              <a href="#" class="discover-btn">Discover</a>
-            </div>
-            <div class="product-details text-center">
-              <span class="span-product-name">ground coffee</span>
-              <h3 class="product-name">CLASSICO QUADRIPACK</h3>
-              <p class="product-price">
-                <span class="old-price">14,99€</span>
-                <span class="new-price">9,59€ <span class="span-price">/ 4x250 G</span></span>
-              </p>
-              <button class="add-to-cart-btn">
-                <img
-                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                  alt="Add to Cart"
-                />
-              </button>
-            </div>
-          </div>
-          <!-- Product Card 3 -->
-          <div class="col-6 col-sm-6 col-lg-4 product-card">
-            <div
-              class="product-image"
-              style="
-                background-image: url('https://www.caffebristot.com/wp-content/uploads/2021/07/Decaffe-250g-taglio-1548x1824-1.png');
-              "
-            >
-              <span class="discount-badge">-20%</span>
-              <a href="#" class="discover-btn">Discover</a>
-            </div>
-            <div class="product-details text-center">
-              <span class="span-product-name">ground coffee</span>
-              <h3 class="product-name">DECAFFE</h3>
-              <p class="product-price">
-                <!-- <span class="old-price">5,49€ / 1</span> -->
-                <span class="new-price">5,99€ <span class="span-price">/ 1</span></span>
-              </p>
-              <button class="add-to-cart-btn">
-                <img
-                  src="https://www.caffebristot.com/wp-content/themes/caffe-bristot/images/icons/add-to-cart_loop.svg"
-                  alt="Add to Cart"
-                />
-              </button>
-            </div>
-          </div>
-          
-  </section>
+        </div>
+      </div>
 
        <!-- SHIPPING SECTION -->
     <section id="shipping-section" class="bg-cover bg-texture pb-5">
