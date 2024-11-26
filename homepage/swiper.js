@@ -57,29 +57,48 @@ document.addEventListener('DOMContentLoaded', function () {
     //   }
     // }
   });
-});
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const uniqueSwiper = new Swiper('#unique-product-carousel .unique-swiper', {
-      loop: false,
-      slidesPerView: 2,
-      spaceBetween: 20,
-      breakpoints: {
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 4,
-          spaceBetween: 50,
-        },
+  const firstSwiper = new Swiper('.swiper .coffeeSwiper', {
+    loop: false,
+    slidesPerView:2,
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
-      navigation: {
-        prevEl: '#unique-product-carousel .unique-swiper-previous',
-        nextEl: '#unique-product-carousel .unique-swiper-next',
-      },
-    });
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      }
+    },
+    navigation: {
+      prevEl: '#product-carousel-first .prev',
+      nextEl: '#product-carousel-first .next'
+    },
+    // on: {
+    //   init: function () {
+    //     // document.querySelector('.swiper-previous.prev').style.visibility = 'hidden';
+    //     document.querySelector('.swiper-previous.prev').style.border = "5px solid red";
+    //   },
+    //   slideChange: function () {
+    //     // Show prev button when not on the first slide
+    //     if (firstSwiper.activeIndex > 0) {
+    //       document.querySelector('.swiper-previous.prev').style.visibility = 'visible';
+    //     } else {
+    //       document.querySelector('.swiper-previous.prev').style.visibility = 'hidden';
+    //     }
+
+    //     // Hide next button on the last slide
+    //     if (firstSwiper.isEnd) {
+    //       document.querySelector('.swiper-next.next').style.visibility = 'hidden';
+    //     } else {
+    //       document.querySelector('.swiper-next.next').style.visibility = 'visible';
+    //     }
+    //   }
+    // }
   });
-  
 
+
+});
 
