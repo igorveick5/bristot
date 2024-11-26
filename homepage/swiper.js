@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
   });
 
-  const firstSwiper = new Swiper('.swiper-first', {
+  const firstSwiper = new Swiper('#first-swiper-carousel .first-swiper', {
     loop: false,
-    slidesPerView:2,
+    slidesPerView: 2,
     spaceBetween: 20,
     breakpoints: {
       768: {
@@ -70,11 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
       992: {
         slidesPerView: 4,
         spaceBetween: 50,
-      }
+      },
     },
     navigation: {
-      prevEl: '#product-carousel-first .prev',
-      nextEl: '#product-carousel-first .next'
+      prevEl: '#product-carousel-first .prev', // Selector for previous button
+      nextEl: '#product-carousel-first .next',
     },
     // on: {
     //   init: function () {
