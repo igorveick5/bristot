@@ -185,13 +185,13 @@ main {
 
 .swiper-previous {
   left: -3rem;
-  top: 10rem;
+  top: 12rem;
   z-index: 999;
 }
 
 .swiper-next {
   right: -3rem;
-  top: 10rem;
+  top: 12rem;
   z-index: 999;
 }
 
