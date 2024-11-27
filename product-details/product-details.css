@@ -152,13 +152,29 @@
 
   /* MAIN SECTION PRODUCT DETAILS */
 
+.product-image-main {
+  height: auto;
+  width: 800px;
+}
+
 .site-main {
   padding-top: 100px;
 }
 
+
+
 .product-thumbnail img {
+  width: 100%;
   max-height: 50vh;
+  border-radius: 15px;
+  transition: transform 0.4s ease-in-out; 
 }
+
+.product-thumbnail:hover img {
+  transform: scale(1.03); 
+  filter: brightness(0.9); 
+}
+
 
 .product-image-section {
   position: relative;
