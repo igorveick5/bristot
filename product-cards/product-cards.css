@@ -180,7 +180,6 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   text-align: left;
   z-index: 2;
@@ -359,11 +358,10 @@ main {
 
 /* Style for the main heading */
 .swiper-h2 {
-  transform: translateX(-25%);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 50px;
-  color: black;
+  color: #000;
   position: relative;
   display: inline-block;
   border-bottom: 5px solid transparent;
@@ -383,17 +381,15 @@ main {
   position: absolute;
   right: -45px;
   top: 50%;
-  transform: translateY(-50%);
   font-size: 30px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .swiper-p {
-  transform: translateX(-9%);
   font-size: 24px;
   font-weight: 500;
-  color: black;
+  color: #000;
   padding-bottom: 20px;
   position: relative;
   display: block;
@@ -507,8 +503,8 @@ main {
   text-align: center;
 }
 
-/* Column styling */
-.shipping-container .col-6 {
+/* Column Styling */
+.shipping-container .shipping-column {
   text-align: center;
   flex: 1;
   display: flex;
@@ -519,12 +515,12 @@ main {
   padding: 20px;
 }
 
-.shipping-container .col-6:first-child {
+.shipping-container .shipping-column:first-child {
   border-left: none;
 }
 
-/* Vertical lines */
-.shipping-container .col-6::after {
+/* Vertical Lines */
+.shipping-container .shipping-column::after {
   content: "";
   position: absolute;
   top: 0;
@@ -534,13 +530,14 @@ main {
   background-color: black;
 }
 
-.shipping-container .col-6:last-child::after {
+.shipping-container .shipping-column:last-child::after {
   display: none;
 }
 
-.shipping-container .col-6:last-child {
+.shipping-container .shipping-column:last-child {
   border-right: none;
 }
+
 
 /* FOOTER */
 .footer {
