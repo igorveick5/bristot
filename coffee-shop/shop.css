@@ -531,7 +531,7 @@ main {
 
 .shipping-container a:hover .img-fluid.hover {
   opacity: 1;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 /* Text styling */
