@@ -146,6 +146,71 @@ main {
 }
 
 
+.coffeeSwiper .swiper-slide h3 {
+  color: #fff;
+  transition: color 0.3s ease;
+} 
+
+.coffeeSwiper .swiper-slide {
+  transition: transform 0.3s ease;
+  transform-origin: top center;
+}
+
+.coffeeSwiper .swiper-slide:hover {
+  transform: scaleY(1.04);
+}
+
+.coffeeSwiper .swiper-slide:hover img {
+  transform: scaleY(1.04);
+  transform-origin: top center;
+  transition: transform 0.4s ease;
+}
+
+.coffeeSwiper .swiper-slide:hover .text-overlay h3 {
+  color: #ef6c00;
+  transition: color 0.3s ease;
+}
+
+/* Add a darker overlay on the image */
+.coffeeSwiper .swiper-slide .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Style for the image */
+.coffeeSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 0;
+}
+
+/* Text and Button Overlay */
+.coffeeSwiper .swiper-slide .text-overlay {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
 .text-overlay {
   position: absolute;
   top: 0;
