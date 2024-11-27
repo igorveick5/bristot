@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   
-    const firstSwiper = new Swiper(".swiper-first", {
+    const relatedSlider = new Swiper("#related_slider", {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
       breakpoints: {
         768: {
           slidesPerView: 3,

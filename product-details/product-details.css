@@ -50,12 +50,12 @@
   }
   
   /* Container with max-width control */
-  .container {
+  /* .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-  }
+  } */
   
   /* Header */
   .header {
@@ -469,18 +469,6 @@
 
   
 /* SWIPER */
-.swiper {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  right: 10%;
-}
-
-.swiper-wrapper {
-  display: flex;
-}
-
-
 /* SWIPER NAVIGATION */
 .nav--item {
   visibility: visible;
@@ -534,8 +522,8 @@
 
 /* Style for the main heading */
 .swiper-h2 {
-  transform: translateX(-25%);
-  text-transform: uppercase;
+  /* transform: translateX(-25%);
+  text-transform: uppercase; */
   font-weight: bold;
   font-size: 50px;
   color: black;
