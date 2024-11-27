@@ -61,52 +61,6 @@ main {
 
 
 
-/* Large screens */
-@media (min-width: 1540px) {
-  .container {
-    max-width: 1500px; 
-  }
-}
-
-/* Medium screens */
-@media (max-width: 1539px) {
-  .container {
-    max-width: 1200px; 
-  }
-}
-
-/* Mobile devices */
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%; 
-    padding: 0 10px; 
-  }
-
-  .image-container {
-    height: 60vh;
-  }
-
-  .main-bg {
-    height: 60vh; 
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px; 
-  }
-
-  .image-container {
-    height: 50vh; 
-  }
-
-  .main-bg {
-    height: 50vh; 
-  }
-}
-
-
 /* SWIPER */
 .swiper {
   position: absolute;
@@ -418,7 +372,7 @@ main {
 }
 
 .custom-btn {
-  min-width: 310px;
+  min-width: auto;
   display: inline-flex;
   align-items: center; 
   justify-content: center; 
@@ -575,8 +529,35 @@ main {
 }
 
 .col-md-6.text-center.text-md-end {
-  padding-top: 310px;
+  padding-top: 210px;
 }
+
+
+@media (max-width: 991px) {
+  #bristot-coffee-section .section-h2 {
+    font-size: 1.75rem; 
+  }
+  #bristot-coffee-section .section-p {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  #bristot-coffee-section .section-h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #bristot-coffee-section .section-p {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  #bristot-coffee-section img.bristot-coffee-logo {
+    max-width: 80%; 
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 
 
 /* Header */
