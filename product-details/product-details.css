@@ -269,7 +269,6 @@
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     border: none;
-    padding: 7px;
   }
   
   /* Product Image */
@@ -277,17 +276,11 @@
     position: relative;
     width: 100%;
     padding-top: 120%;
-    background-size: 100%;
-    background-position: center;
     border-radius: 15px;
     transition: background-size 0.4s ease-in-out;
     overflow: hidden;
   }
-  
-  .product-image:hover {
-    background-size: 110%; 
-    filter: brightness(0.9);
-  }
+
   
   /* Discount Badge */
   .discount-badge {
