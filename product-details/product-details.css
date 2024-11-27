@@ -156,6 +156,10 @@
   padding-top: 100px;
 }
 
+.product-thumbnail img {
+  max-height: 50vh;
+}
+
 .product-image-section {
   position: relative;
 }
@@ -815,4 +819,28 @@
   
   .footer .support-icons i:last-child {
     margin-right: 0;
+  }
+
+  .product-thumbnail {
+    position: relative;
+  }
+
+  .product-thumbnail img {
+    object-fit: cover;
+  }
+
+  .discover-btn {
+    transform: none;
+  }
+  
+  .product-thumbnail:hover .discover-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .product-thumbnail .discover-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10;
   }
